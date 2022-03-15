@@ -1,0 +1,93 @@
+*Main.java*
+
+public class main {
+
+    public class Main {
+        public void main(String[] args) {
+            evento evento1 = new evento();
+            evento1.setEvento("Show");
+            evento1.setEvento("JogoFutebol");
+            evento1.setEvento("Natal");
+            System.out.println(evento1);
+        }
+
+    }
+
+}
+
+
+
+*Cliente.java*
+
+public class cliente {
+
+    public class Pessoa {
+        private String nome;
+        private String telefone;
+        private String email;
+        private String cpf;
+
+        public String getNome() {
+            return nome;
+        }
+
+        public void setNome(String nome) {
+            this.nome = nome;
+        }
+
+        public String getTelefone() {
+            return telefone;
+        }
+
+        public void setTelefone(String telefone) {
+            this.telefone = telefone;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+
+        public void
+        setEmail(String email1) {
+            this.email = email;
+        }
+
+        public void setCpf() {
+            this.cpf = cpf;
+
+        }
+
+        public String getCpf() {
+            String cpf = this.cpf;
+            return cpf;
+
+        }
+
+    }
+
+}
+
+
+
+*Evento.java*
+
+public class evento {
+
+        //atributos
+        public int id;
+        public String data;
+        public String local;
+        public String cliente;
+        public double preco;
+
+        //metodo ou function
+        public void imprimir(){
+            System.out.println("Local: "+local
+                    +"\nData: "+data
+                    +"\nCliente: "+cliente
+                    +"\nPreço: "+preco+"\n\n");
+        }
+
+        public void setEvento(String s) {
+        }
+}
