@@ -1,0 +1,73 @@
+*Main*
+
+
+import java.util.Arrays;
+
+class Main {
+    public static void main(String[]args) {
+
+        Pedido pedido1 = new Pedido();
+        Pedido.setPedido("Pedido da Mauricio");
+        Pedido.setPedido("ItensDoPedido1");
+        Pedido.setPedido(String.valueOf(pedido1));
+        System.out.println(pedido1);
+
+        String pedido2 = String.valueOf(new Pedido());
+        for (String s : Arrays.asList("Pedido do Pedro")) {
+            Pedido.setPedido(s);
+        }
+        System.out.println(pedido2);
+
+        Pedido pedido3 = new Pedido();
+        Pedido.setPedido("Pedido da Ana");
+        Pedido.setPedido("ItensDoPedido3");
+        Pedido.setPedido(String.valueOf(pedido3));
+        System.out.println(pedido3);
+    }
+
+}
+
+
+
+
+
+
+
+*Pedido*
+
+
+public class Pedido {
+
+
+    private String descrição;
+    private String data;
+    private String valor;
+    private String pedido;
+
+
+    public String getPedido() {
+        String pedido;
+        return pedido;
+    }
+
+    public void setDescrição(String descrição) {
+        this.pedido = getPedido();
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setValor(String Valor) {
+        this.getValor() = valor;
+    }
+
+    public String getValor() {
+        String valor = this.valor;
+        return valor;
+
+    }
+}
+
+       
+ 
